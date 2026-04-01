@@ -1,12 +1,11 @@
 import psycopg2
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def conectar():
-    conexao = psycopg2.connect(
-        host="localhost",
-        database="tarefas_db",
-        user="luizotavio",
-        password="senha123"
-    )
+    conexao = psycopg2.connect(os.getenv("DATABASE_URL"))
     return conexao
 
 def criar_tabela():
