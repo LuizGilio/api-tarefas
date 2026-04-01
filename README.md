@@ -2,6 +2,12 @@
 
 API REST construída com FastAPI e PostgreSQL para gerenciamento de tarefas.
 
+## API em produção
+
+Acesse a documentação interativa:
+https://web-production-4d5e5.up.railway.app/docs
+
+
 ## Tecnologias
 
 - Python 3.14
